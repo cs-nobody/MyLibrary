@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_file_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y_px_88">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/x_px_100"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x_px_24"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y_px_88"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="标题栏"
+            android:textColor="#3691e5"
+            android:textSize="@dimen/x_px_24" />
+    </RelativeLayout>
+
+    <com.myutils.mine.librarydemo.view.SuperFileView2
+        android:id="@+id/mSuperFileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
