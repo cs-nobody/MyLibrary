@@ -23,7 +23,7 @@ public abstract class BaseApp extends Application {
                     System.out.println("x5内核加载失败==============");
                 }
             }
-
+//修改
             @Override
             public void onCoreInitFinished() {
                 // TODO Auto-generated method stub
